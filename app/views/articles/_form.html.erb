@@ -1,0 +1,14 @@
+
+<%= form_with model: article do |f| %>
+  <div class="card">
+    <div class="card-body">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+
+    <%= f.label :content %>
+    <%= f.text_field :content, class: "form-control" %>
+
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

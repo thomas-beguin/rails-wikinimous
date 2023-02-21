@@ -1,0 +1,14 @@
+<div class="mt-3">
+
+  <div class="alert alert-info" role="alert">
+    A simple info alert—check it out!
+  </div>
+
+  <h1>
+    <%= @article.title %>
+    <%= link_to "🗑️", article_path(@article), {data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}} %>
+    <%= link_to "🖋️", edit_article_path(@article) %>
+  </h1>
+
+  <h2><%= @article.content %></h2>
+</div>
